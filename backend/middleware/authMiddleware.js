@@ -9,7 +9,7 @@ const protect = asyncHandler(async (req, res, next) => {
   // Read the JWT from the cookie
   token = req.cookies.jwt;
 
-  if (!token) {
+  if (token) {
     try{
       const decoded = jwt.verify(token, process.env.JWT_SECRET);
       req.user = await User.findById(decoded.userId).select('-password');

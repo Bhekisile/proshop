@@ -6,6 +6,10 @@ export const usersApiSlice = apiSlice.injectEndpoints({
     login: builder.mutation({
       query: (data) => ({
         url: `${USERS_URL}/auth`,
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        credentials: 'include',
         method: 'POST',
         body: data,
       }),
@@ -13,6 +17,10 @@ export const usersApiSlice = apiSlice.injectEndpoints({
     register: builder.mutation({
       query: (data) => ({
         url: `${USERS_URL}`,
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        credentials: 'include',
         method: 'POST',
         body: data,
       }),
@@ -21,6 +29,10 @@ export const usersApiSlice = apiSlice.injectEndpoints({
       query: () => ({
         url: `${USERS_URL}/logout`,
         method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        credentials: 'include',
       }),
     }),
   }),

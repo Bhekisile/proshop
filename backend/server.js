@@ -7,6 +7,7 @@ import productRoutes from './routes/productRoutes.js';
 import userRoutes from './routes/userRoutes.js';
 import orderRoutes from './routes/orderRoutes.js';
 import { errorHandler, notFound } from './middleware/errorMiddleware.js';
+import cors from 'cors';
 
 const port = process.env.PORT || 5000;
 
@@ -14,6 +15,13 @@ connectDB();  // Connect to MongoDB
 
 // initialize express
 const app = express();
+
+const corsOptions = {
+  origin: true,
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
 
 // Body parser middleware
 app.use(express.json());

@@ -17,10 +17,12 @@ const OrderScreen = () => {
   const { id: orderId } = useParams();
   const { data: order, refetch, error, isLoading } = useGetOrderDetailsQuery(orderId);
   const [payOrder, { isLoading: loadingPay }] = usePayOrderMutation();
-  const [deliverOrder, { isLoading: loadingDeliver}] = useDeliverOrderMutation();
+  const [deliverOrder, { isLoading: loadingDeliver }] = useDeliverOrderMutation();
   const [{ isPending }, paypalDispatch] = usePayPalScriptReducer();
   const { data: paypal, isLoading: loadingPayPal, error: errorPayPal } = useGetPayPalClientIdQuery();
   const { userInfo } = useSelector((state) => state.auth);
+
+  // console.log('paypal', paypal);
 
   useEffect(() => {
     if (!errorPayPal &&  !loadingPayPal && !paypal.clientId) {
@@ -190,7 +192,7 @@ const OrderScreen = () => {
                             createOrder={createOrder}
                             onApprove={onApprove}
                             onError={onError}
-                          />
+                          ></PayPalButtons>
                         </div>
                       </div>
                     )}

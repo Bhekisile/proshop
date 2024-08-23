@@ -1,10 +1,17 @@
 import express from "express";
-import { getProducts, getProductById } from "../controllers/productController.js";
+import { 
+  getProducts, 
+  getProductById, 
+  createProduct, 
+  updateProduct,
+  deleteProduct,
+ } from "../controllers/productController.js";
 
 const router = express.Router();
+import { protect, admin } from '../middleware/authMiddleware.js';
 
-router.route('/').get(getProducts);
-router.route('/:id').get(getProductById);
+router.route('/').get(getProducts).post(protect, admin, createProduct);
+router.route('/:id').get(getProductById).put(protect, admin, updateProduct).delete(protect, admin, deleteProduct);
 
 // router.get('/', asyncHandler(async (req, res) => {
 //   const products = await Product.find({});

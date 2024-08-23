@@ -64,10 +64,10 @@ const ProductEditScreen = () => {
     formData.append('image', e.target.files[0]);
     try {
       const res = await uploadProductImage(formData).unwrap();
-      toast.success(res.Message);
-      setImage(res.Image);
+      toast.success(res.message);
+      setImage(res.image);
     } catch (err) {
-      toast.error(err?.data?.message || err.message);
+      toast.error(err?.data?.message || err.error);
     }
   }
 
@@ -109,9 +109,9 @@ const ProductEditScreen = () => {
                 <Form.Control 
                   type="text" 
                   placeholder='Enter image url' 
-                  value={image} onChange={
-                    (e) => setImage(e.target.value)
-                    }
+                  value={image} 
+                  onChange={
+                    (e) => setImage}
                 ></Form.Control>
                 <Form.Control type='file' label='Choose File' onChange={ uploadFileHandler }></Form.Control>
                 

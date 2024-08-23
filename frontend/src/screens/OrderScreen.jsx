@@ -25,7 +25,7 @@ const OrderScreen = () => {
   // console.log('paypal', paypal);
 
   useEffect(() => {
-    if (!errorPayPal &&  !loadingPayPal && !paypal.clientId) {
+    if (!errorPayPal &&  !loadingPayPal && paypal.clientId) {
       const loadPayPalScript = async () => {
         paypalDispatch({ 
           type: 'resetOptions',

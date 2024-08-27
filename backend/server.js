@@ -16,7 +16,7 @@ const port = process.env.PORT || 5000;
 connectDB();  // Connect to MongoDB
 
 // initialize express
-// const app = express();
+const app = express();
 
 const corsOptions = {
   origin: true,
@@ -48,6 +48,8 @@ app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
 
 if (process.env.NODE_ENV === 'production') {
   // set static folder
+  // const __dirname = path.resolve();
+  // app.use('/uploads', express.static('/var/data/uploads'));
   app.use(express.static(path.join(__dirname, '/frontend/build')));
 
   // any route that is not an API route, will be redirected to index.html

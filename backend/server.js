@@ -16,7 +16,7 @@ const port = process.env.PORT || 5000;
 connectDB();  // Connect to MongoDB
 
 // initialize express
-const app = express();
+// const app = express();
 
 const corsOptions = {
   origin: true,
@@ -32,9 +32,9 @@ app.use(express.urlencoded({ extended: true }));
 // Cookie parser middleware
 app.use(cookieParser());
 
-app.get('/', (req, res) => {
-  res.send('API is running...');
-});
+// app.get('/', (req, res) => {
+//   res.send('API is running...');
+// });
 
 app.use('/api/products', productRoutes);
 app.use('/api/users', userRoutes);

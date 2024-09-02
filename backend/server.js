@@ -32,10 +32,6 @@ app.use(express.urlencoded({ extended: true }));
 // Cookie parser middleware
 app.use(cookieParser());
 
-// app.get('/', (req, res) => {
-//   res.send('API is running...');
-// });
-
 app.use('/api/products', productRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/orders', orderRoutes);
@@ -48,8 +44,6 @@ app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
 
 if (process.env.NODE_ENV === 'production') {
   // set static folder
-  // const __dirname = path.resolve();
-  // app.use('/uploads', express.static('/var/data/uploads'));
   app.use(express.static(path.join(__dirname, '/frontend/build')));
 
   // any route that is not an API route, will be redirected to index.html

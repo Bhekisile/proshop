@@ -51,3 +51,8 @@ table th {
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
 }
+
+.image-gallery-image {
+  width: 376px;
+  height: 290px;
+}

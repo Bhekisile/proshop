@@ -21,10 +21,12 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [The Wild Oasis] <a name="about-project"></a>
+# 📖 [ProShop] <a name="about-project"></a>
 
 
-**[Proshop]** This is an online store where customers can search for the product and purchase it online. It is an end-to-end application with a seamless user experience and interactions. An admin manages the application and has CRUD access. It authorizes and authenticates users, allowing them to place an order after authentication and have access to their own account.
+**[Proshop]** This is an e-commerce website where customers can search for the product and purchase it online. It is an end-to-end application with
+ a seamless user experience and interactions. An admin manages the application and has CRUD access. It authorizes and authenticates users, allowing
+ them to place an order after authentication and have access to their own account.
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -34,6 +36,7 @@
 - **[MangoDB]**
 - **[Express]**
 - **[NodeJS]**
+- **[Bootstrap]**
 
 <!-- Features -->
 
@@ -82,7 +85,7 @@ npm run dev
 
 ### Deployment
 
-You can deploy this project using: Netlify
+You can deploy this project using: Netlify, Render
 
 <!-- AUTHORS -->
 
@@ -97,7 +100,7 @@ You can deploy this project using: Netlify
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Accomplishments]**
+- [ ] **[Gallery image]**
 
 <!-- CONTRIBUTING -->
 

@@ -21,10 +21,10 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [The Wild Oasis] <a name="about-project"></a>
+# 📖 [ProShop] <a name="about-project"></a>
 
 
-**[Proshop]** This is an online store where customers can search for the product and purchase it online. It is an end-to-end application with a seamless user experience and interactions. An admin manages the application and has CRUD access. It authorizes and authenticates users, allowing them to place an order after authentication and have access to their own account.
+**[Proshop]** is an e-commerce platform I built throughout the course using React, Redux, Node, Express, and MongoDB. I had the opportunity to work with JWT authentication, a PayPal payment gateway, an admin area for managing customers, products, and orders, as well as features such as product ratings, reviews, search, carousel, pagination, and an image gallery. It is a seamless user experience and interactions with high web performance that online customers will enjoy.
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -34,6 +34,7 @@
 - **[MangoDB]**
 - **[Express]**
 - **[NodeJS]**
+- **[Bootstrap]**
 
 <!-- Features -->
 
@@ -43,8 +44,9 @@
 - **[Customer Reviews]**
 - **[Shopping Cart]**
 - **[Shipping]**
-- **[Payment Methods]**
+- **[Payment Option]**
 - **[Place Order]**
+- **[Image Gallery]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -82,7 +84,7 @@ npm run dev
 
 ### Deployment
 
-You can deploy this project using: Netlify
+You can deploy this project using: Netlify, Render
 
 <!-- AUTHORS -->
 
@@ -97,7 +99,7 @@ You can deploy this project using: Netlify
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Accomplishments]**
+- [ ] **[Gallery image]**
 
 <!-- CONTRIBUTING -->
 
@@ -122,7 +124,8 @@ If you like this project please give it a star.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Udemy for this course that assisted me to gain MERN stack knowledge.
+I would like to express my gratitude to Udemy and instructor Brad Traversy for this course, which greatly assisted me in gaining a comprehensive understanding of the MERN stack.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

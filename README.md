@@ -24,9 +24,7 @@
 # 📖 [ProShop] <a name="about-project"></a>
 
 
-**[Proshop]** This is an e-commerce website where customers can search for the product and purchase it online. It is an end-to-end application with
- a seamless user experience and interactions. An admin manages the application and has CRUD access. It authorizes and authenticates users, allowing
- them to place an order after authentication and have access to their own account.
+**[Proshop]** is an e-commerce platform I built throughout the course using React, Redux, Node, Express, and MongoDB. I had the opportunity to work with JWT authentication, a PayPal payment gateway, an admin area for managing customers, products, and orders, as well as features such as product ratings, reviews, search, carousel, pagination, and an image gallery. It is a seamless user experience and interactions with high web performance that online customers will enjoy.
 
 
 ## 🛠 Built With <a name="built-with"></a>
